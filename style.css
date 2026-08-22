@@ -116,7 +116,7 @@ header{
 }
 @media (max-width: 576px) {
   .profile-pic img {
-    width: 80px;
+    width: 140px;
     aspect-ratio: 1 / 1;
   }
 }
