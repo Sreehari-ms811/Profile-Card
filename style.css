@@ -29,14 +29,22 @@ body{
   box-shadow: 10px 15px 20px #534AB7 ;
 }
 .profile-pic img{
-    width:25vw;
-    max-width:120px;
-    height: auto;
+    width: 30vw;
+    max-width: 150px;   
+    aspect-ratio: 1 / 1;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     user-select: none;
     border: 3px solid #0C447C ;
 }
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .profile-pic{
     display: flex;
     margin-top: 8px;
@@ -106,52 +114,30 @@ header{
     align-items: center;
     flex-direction: column;
 }
-@media (min-width: 576px)  { /* sm — large phones */ 
-    .wrapper{
-        width:90%;
-        height:auto;
-        padding:1rem;
-    }
-    .profile-pic img{
-        width:80px;
-        height:90px;
-    }
-    .imp1{
-        font-size:1.1rem;
-    }
-    .imp2, .imp{
-        font-size:0.9rem;
-    }
-    .contact table{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
+@media (max-width: 576px) {
+  .profile-pic img {
+    width: 80px;
+    aspect-ratio: 1 / 1;
+  }
 }
-@media (min-width: 768px)  {
-    .wrapper{
-        width:70%;
-        height:auto;
-    }
-    .profile-pic img{
-        width:100px;
-        height:110px;
-    }
-    .imp1{
-        font-size:1.3rem;
-    }
- }
-@media (min-width: 992px)  {
-    .wrapper{
-        width:20%;
-    }
-    .profile-pic img{
-        width:100px;
-        height:120px;
-    }
+
+@media (min-width: 768px) {
+  .profile-pic img {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+  }
 }
-@media (min-width: 1200px) {
-    .wrapper{
-        width:40%;
-    }
- }
+
+@media (min-width: 992px) {
+  .profile-pic img {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (min-width: 1200px){
+  .profile-pic img {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+  }
+}
